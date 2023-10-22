@@ -4,7 +4,7 @@
 
 ## Introduction
 
-This is a simple digit recognizer from scratch using python and numpy. The model is trained on MNIST dataset. The model is trained using resnet architecture. The model is trained on 60,000 images and tested on 10,000 images. The model has an accuracy of 99.01% on the test set. The model is then deployed on a web UI using Flask.
+This is a simple digit recognizer from scratch using python and pytorch. The model is trained on MNIST dataset. The model is trained using resnet architecture. The model is trained on 60,000 images and tested on 10,000 images. The model has an accuracy of 99.01% on the test set. The model is then deployed on a web UI using Flask.
 
 This project is built for the mid-term project of the Artificial Intelligence course at the State University of Surabaya.
 
