@@ -1,10 +1,11 @@
 {
-    "name": "view",
+    "name": "digitrecognizer",
     "version": "0.1.0",
     "private": true,
     "scripts": {
         "be": "cd backend && python main.py",
-        "dev": "next dev",
+        "setup": "cd backend && pip install -r requirements.txt",
+        "fe": "next dev",
         "build": "next build",
         "start": "next start",
         "lint": "next lint"

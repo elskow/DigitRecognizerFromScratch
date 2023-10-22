@@ -9,8 +9,6 @@ import torch
 app = Flask(__name__)
 predictor = Predictor()
 
-# set cross-origin resource sharing (CORS) policy to allow requests from all origins
-
 
 @app.after_request
 def after_request(response):
@@ -31,7 +29,6 @@ def predict():
         image = Image.fromarray(image, mode="CMYK").convert("L")
         image = Image.eval(image, lambda x: 255 - x)
         image = image.resize((28, 28))
-        # noise reduction
         image = image.point(lambda x: 0 if x < 128 else 255, "1")
         image = np.array(image)
         image = image.astype(np.float32) / 255.0
