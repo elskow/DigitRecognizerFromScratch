@@ -35,9 +35,10 @@ def predict():
         image = torch.from_numpy(image).unsqueeze(0).unsqueeze(0)
 
         prediction, confidence = predictor.predict(image)
-        confidence = str(confidence)[-2:] + "%"
+        # change confidence to percentage and round to 2 decimal places
+        confidence = round(confidence * 100, 2)
         return jsonify(
-            {"predicted_digit": str(prediction), "confidence": confidence}
+            {"predicted_digit": str(prediction), "confidence": str(confidence) + "%"}
         )
 
     except Exception as e:
