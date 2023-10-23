@@ -119,7 +119,7 @@ export default function Home() {
             </div>
             <div className="flex flex-row justify-center items-center">
                 <button
-                    className="bg-red-800 text-white font-bold py-2 px-4 rounded-full shadow-2xl opacity-90 hover:bg-red-900 transition-colors duration-500"
+                    className="bg-blue-800 text-white font-bold py-2 px-4 rounded-lg shadow-2xl opacity-90 hover:bg-blue-900 transition-colors duration-500"
                     onClick={clearCanvas}
                 >
                     Reset
